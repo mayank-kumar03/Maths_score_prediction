@@ -17,6 +17,13 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+if __name__ == "__main__":
+    logging.info("Logging has been set up successfully.")
+    logging.info("This is an info message.")
+    logging.error("This is an error message.")
+    logging.warning("This is a warning message.")
+    logging.debug("This is a debug message.")
+    logging.critical("This is a critical message.")
 
 
     
