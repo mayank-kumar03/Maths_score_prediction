@@ -4,6 +4,8 @@ from src.exception import CustomException
 from src.logger import logging
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig       
+from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer import ModelTrainerConfig
 # Import necessary libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -50,7 +52,11 @@ if __name__ == "__main__":
       obj = DataIngestion()
       train_data, test_data = obj.initiate_data_ingestion()
       data_transformation = DataTransformation()
-      data_transformation.initiate_data_transformation(train_path=train_data, test_path=test_data)
-      logging.info("Data Ingestion and Transformation completed successfully.")     
-      print("Data Ingestion completed successfully.")
+      train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+      logging.info("Data Ingestion and Transformation completed successfully.")  
+      model_trainer = ModelTrainer()
+      r2_score = model_trainer.initiate_model_trainer(train_array=train_arr, test_array=test_arr)
+      logging.info(f"Model trained with R2 score: {r2_score}")
+        
+     
 
