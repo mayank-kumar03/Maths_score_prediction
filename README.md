@@ -5,6 +5,13 @@ This project demonstrates the complete ML workflow: data ingestion, preprocessin
 
 ---
 
+## 🌐 Live Demo
+
+- 🚀 [Live App on Render](https://maths-score-prediction-lpvz.onrender.com)
+- 🐙 [GitHub Repository](https://github.com/mayank-kumar03/Maths_score_prediction)
+
+---
+
 ## ✨ Features
 
 - 📥 **Data Ingestion:** Automated reading and splitting of raw data.
@@ -64,7 +71,7 @@ Maths_score_prediction/
 
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/mayank-kumar03/Maths_score_prediction
    cd Maths_score_prediction
    ```
 
@@ -97,7 +104,6 @@ Maths_score_prediction/
 ## 👨‍💻 Author
 
 - Mayank Kumar
-- [Your Email or GitHub]
 
 ---
 
